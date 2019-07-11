@@ -411,23 +411,21 @@ body .typeArea .contentPortion #figure .flip-container {
   width: 133px;
   height: 525px;
   cursor: pointer;
-}
-body .typeArea .contentPortion #figure .flip-container:hover .flipper {
-  transform: rotateY(180deg);
-}
-body .typeArea .contentPortion #figure .flip-container .flipper {
   transition: 0.8s;
   transform-style: preserve-3d;
   position: relative;
 }
-body .typeArea .contentPortion #figure .flip-container .flipper .front,
-body .typeArea .contentPortion #figure .flip-container .flipper .back {
+body .typeArea .contentPortion #figure .flip-container:hover {
+  transform: rotateY(180deg);
+}
+body .typeArea .contentPortion #figure .flip-container .front,
+body .typeArea .contentPortion #figure .flip-container .back {
   position: absolute;
 }
-body .typeArea .contentPortion #figure .flip-container .flipper .front {
+body .typeArea .contentPortion #figure .flip-container .front {
   backface-visibility: hidden;
 }
-body .typeArea .contentPortion #figure .flip-container .flipper .back {
+body .typeArea .contentPortion #figure .flip-container .back {
   transform: rotateY(180deg);
 }
 body .typeArea .contentPortion .bigwallpaper {
