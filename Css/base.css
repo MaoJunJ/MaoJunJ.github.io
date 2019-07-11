@@ -1,0 +1,73 @@
+body,
+h1,
+h2,
+h3,
+h4,
+span,
+p,
+strong,
+div,
+a,
+ul,
+li,
+dd,
+dl,
+dt,
+ins,
+img,
+i,
+input,
+del {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+input {
+  outline: none;
+  border: none;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+i {
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+body {
+  font-size: 12px;
+  line-height: 1;
+  background-color: #fff;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+}
+.clearfix::after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.w {
+  width: 1920px;
+}
+.line {
+  width: 1px;
+  height: 30px;
+  background-color: #6d8799;
+}
+.contain {
+  max-width: 1920px;
+}
