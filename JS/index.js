@@ -78,7 +78,7 @@ $(function(){
 
     $('.bg').css({
         opacity: '0',
-        background:'url(./Images/ri_634a8e7.png)',
+        background:'url(./Images/ri_634a8e7.png) no-repeat ',
     }).fadeTo(1000,1);
 
     setTimeout(function(){
@@ -92,21 +92,7 @@ $(function(){
         },1000);
     },2000);
 
-    setTimeout(function(){
-        $('.reguluslegends').animate({
-            right: 4,
-        },2000)
-    }, 3000);
-    
-    setTimeout(function(){
-        $('.staryao').animate({
-            right: 23,
-           },2250);
-    }, 4000);
-
-   setTimeout(function(){
-       $('.leftbottom').fadeTo(3000,1);
-   }, 2500);
+ 
 
    setTimeout(function(){
        $('.arrowsdow>a').fadeTo(3000,1);
@@ -170,73 +156,7 @@ $(function(){
         });
     }, 3000);
 
-    $('.arrowsdow').click(function(){
-
-        $('#figure>li').eq(0).css({
-            animation:'flipOutY 2s',
-        });
-        $('#figure>li').eq(1).css({
-            animation:'flipOutY 2s',
-        });
-        $('#figure>li').eq(2).css({
-            animation:'flipOutY 2s',
-        });
-        $('#figure>li').eq(3).css({
-            animation:'flipOutY 2s',
-        });
-        $('#figure>li').eq(4).css({
-            animation:'flipOutY 2s',
-        });
-        $('#figure>li').eq(5).css({
-            animation:'flipOutY 2s',
-        });
-        $('#figure>li').eq(6).css({
-            animation:'flipOutY 2s',
-        });
-        $('#figure>li').eq(7).css({
-            animation:'flipOutY 2s',
-        });
-
-        setTimeout(function(){
-
-            $('#figure>li').css({
-                display: 'none',
-                opacity:'0',
-            });
-
-            $('.bigwallpaper').css({
-                background:'url(./Images/bg1_48ceae1.jpg)',
-            }).fadeTo(1000,1);
-            
-            $('.arrowsdow').fadeOut().css({
-                    display:'none',
-                });
-
-            $('.arrowsdow-up').css({
-                    display:'block',
-                }).fadeTo(500,1);
-
-            setTimeout(function(){
-
-                $('.bigwallpaper').children('li').fadeTo(1500,1).css({
-                    animation:'heartBeat 2s',
-                });
-
-                setTimeout(function(){
-
-                    $('.bigwallpaper').children('li:odd').css({
-                        animation:'bigwallpaperkey 2s infinite linear alternate',
-                    }).end().children('li:even').css({
-                        animation:'bigwallpaperkey 1.5s infinite linear alternate',
-                    });
-    
-                },1990);
-
-            },1990);
-            
-        },1990);
-
-    });
+  
 
     $('.arrowsdow-up').click(function(){
 
@@ -483,5 +403,313 @@ $(function(){
         }
     });
 
+// 入场封面动画
+    // $('.ruchang').mouseenter(function(){
+    // $('.ruchang>.hengtiao').animate({
+    //     width: '100%',
+    // },2000,function(){
+    //     $('.ruchang').hide();
+    //     $('.beijing').show();
+    // })
+    // })
+
+    // 预约模块
+    // $('.btn-order').click(function () {
+    //     $('.login').show();       
+
+    // })
+    
+    $('.login-content-close').mouseenter(function () {
+    
+        $(this).css('animation', 'close 0.4s linear forwards')
+    })
+    $('.login-content-close').mouseleave(function () {
+        $(this).css('animation', 'close1 0.4s reverse linear backwards')
+    })
+    
+    $('.login-content-close').click(function () {
+        $('.login').hide();
+        $('#toptop').show();
+    })
+
+    // 第一页面
+    // 点击 声至剑来
+    $('.slogan').click(function () {
+
+        $('.jian').animate({
+
+            top: 460,
+            marginLeft: 100,
+
+        }, 500, function () {
+
+            $('.die').animate({
+
+                top: 370,
+                marginLeft: 130,
+                opacity: 1,
+
+            }, 2000)
+        })
+        // 自动播放声音
+        var music = document.querySelector('.music');
+        music.play();
+    })
+
+    // 点击预约
+    $('.leftA').click(function(){
+        $('.login').show();
+        $('#toptop').hide();
+    })
+  
+
+    // 点击播放视频
+    // $('.bofang').click(function () {
+
+    //     $('.mubu').css('display', 'block');
+    //     $('.header').hide();
+    // })
+    // $('.shut').click(function () {
+
+    //     $('.mubu').css('display', 'none');
+    //     $('.header').show();
+
+    // })
+
+
+    $('.bofang').click(function(){
+    
+        var $res = $('<embed src="./Video/jieshao.mp4" loop="true" class="xyj" autostart="true"> ');
+        $('.mubu>.heibu').append($res);
+        $('.mubu').css('display','block');
+        $('#toptop').hide();
+        $('.logo>h1>a').hide();
+    });
+    
+    $('.shut').click(function(){
+        $('.mubu').css('display','none').find('embed').remove();
+        $('#toptop').show();
+        $('.logo>h1>a').show();
+    });
+
+// 第二页面
+
+    // 点击跳转主页
+    $('.reguluslegends')
+    // 点击跳转副页
+
+
+    // 自动轮播开始前显示第一个小点
+    $('.xiaodian>i').eq(0).stop(true).animate({
+        width: 80,
+    }, 500).siblings().stop(true).animate({
+        width: 15,
+    }, 500);
+    $('.xiaodian>i').eq(0).css('backgroundColor', 'rgb(243, 239, 230)').siblings().css('backgroundColor', '');
+
+    // 自动轮播开始
+    var num = 1;
+   
+    var fun1 = function () {
+
+        $('.big').eq(num).stop(true).fadeIn().siblings().fadeOut();
+        num++;
+        if (num > $('.big').length - 1) {
+            num = 0;
+        }   
+        
+        $('.xiaodian>i').eq(num-1).stop(true).animate({
+            width: 80,
+        }, 500).siblings().stop(true).animate({
+            width: 15,
+        }, 500);
+        $('.xiaodian>i').eq(num-1).css('backgroundColor', 'rgb(243, 239, 230)').siblings().css('backgroundColor', '');
+        
+    }
+    // 移进之前先开始轮播
+    var timeID = setInterval(fun1, 1500);
+
+    // 移入计时器停止 移出继续开始
+    $('.lunbo_left').mouseover(function () {
+
+        clearInterval(timeID);
+
+    }).mouseout(function(){
+
+        timeID = setInterval(fun1,1500);
+    })
+
+    // 小点切换
+    $('.xiaodian>i').mouseenter(function () {
+        clearInterval(timeID);
+
+        $(this).stop(true).animate({
+            width: 80,
+        }, 500).siblings().stop(true).animate({
+            width: 15,
+        }, 500);
+
+        $(this).css('backgroundColor', 'rgb(243, 239, 230)').siblings().css('backgroundColor', '');
+
+        var index = $(this).index();
+        $('.big').eq(index).stop(true).fadeIn().css('display', 'block').siblings().fadeOut(500).css('display', 'none');
+
+    }) 
+
+    // 右边轮播  移入切换页面
+    $('.lunbo_right>.head>span').mouseenter(function(){
+
+        // 先清除刚进来的样式
+        $('.lunbo_right>.head>span').eq(0).removeClass('red');
+
+        // 切换页面
+        $(this).animate({
+            'font-size': 22,           
+ 
+ 
+         },500).css({
+             fontWeight : 'bold',
+             borderBottom : '3px solid red',
+         }).siblings().animate({
+            'font-size': 18,           
+ 
+ 
+         },500).css({
+             fontWeight : '',
+             borderBottom : '',        
+         });
+
+        // 切换页面的效果
+        var ind = $(this).index();        
+        $('.lunbo_right>ul').eq(ind).stop(true).slideDown(500).siblings('ul').slideUp(500);
+        
+    })  
+
+    // 点击左边的切换小点 切换大页面 给要切换的页面加上一个类名yiqi"
+
+    $('.liebiao>a').click(function(){        
+
+        var b = $(this).index() / 2;      
+        $('.xiao').show();
+        $('.da').hide();
+        $('.biao').hide();
+
+        if(b == 0){
+            // 第一屏时左下角消失
+           $('.leftbottom').hide();
+
+           $(this).children('.tao').children('.xiao').stop(true).fadeOut(500);
+           $(this).children('.tao').children('.da').stop(true).fadeIn(500);
+           $(this).children('span').stop(true).fadeIn(500);
+        }else {
+            // 二 三 四屏左下角动画显示
+            setTimeout(function(){
+                $('.leftbottom').fadeTo(2000,1);
+            }, 1000);
+            
+            setTimeout(function(){
+                $('.reguluslegends').animate({
+                    right: 4,
+                },2000)
+            }, 2000);
+
+            setTimeout(function(){
+                $('.staryao').animate({
+                    right: 23,
+                   },2250);
+            }, 2000);
+
+        }
+
+        if(b == 1){
+            $(this).children('.tao').children('.xiao').stop(true).fadeOut(500);
+            $(this).children('.tao').children('.da').stop(true).fadeIn(500);
+            $(this).children('span').stop(true).fadeIn(500);
+        }
+        if(b == 2){
+            $(this).children('.tao').children('.xiao').stop(true).fadeOut(500);
+            $(this).children('.tao').children('.da').stop(true).fadeIn(500);
+            $(this).children('span').stop(true).fadeIn(500);
+        }
+
+        if(b == 3){
+            $(this).children('.tao').children('.xiao').stop(true).fadeOut(500);
+            $(this).children('.tao').children('.da').stop(true).fadeIn(500);
+            $(this).children('span').stop(true).fadeIn(500);
+            
+            // $('.arrowsdow').click(function(){
+
+                // $('#figure>li').css({
+                //     animation:'flipOutY 2s',
+                // });
+                
+        
+                // setTimeout(function(){
+        
+                    // $('#figure>li').css({
+                    //     display: 'none',
+                    //     opacity:'0',
+                    // });
+        
+                    $('.bigwallpaper').css({
+                        background:'url(./Images/bg1_48ceae1.jpg)',
+                    }).fadeTo(1000,1);
+                    
+                    // $('.arrowsdow').fadeOut().css({
+                    //         display:'none',
+                    //     });
+        
+                    // $('.arrowsdow-up').css({
+                    //         display:'block',
+                    //     }).fadeTo(500,1);
+        
+                    setTimeout(function(){
+        
+                        $('.bigwallpaper').children('li').fadeTo(1500,1).css({
+                            animation:'heartBeat 5s',
+                        });
+        
+                        setTimeout(function(){
+        
+                            $('.bigwallpaper').children('li:odd').css({
+                                animation:'bigwallpaperkey 5s infinite linear alternate',
+                            }).end().children('li:even').css({
+                                animation:'bigwallpaperkey 5.5s infinite linear alternate',
+                            });
+            
+                        },5000);
+        
+                    },1000);
+                    
+                // },500);
+        
+            // });
+        }
+        $('.yiqi').eq(b).fadeIn(2000).css('display','block').siblings('.yiqi').css('display','none');  
+      
+    })
+
+        // 移入切换显示
+        // $('.liebiao>a').mouseenter(function () {
+
+        //     $(this).children('.tao').children('.xiao').stop(true).fadeOut(500);
+        //     $(this).children('.tao').children('.da').stop(true).fadeIn(500);
+        //     $(this).children('span').stop(true).fadeIn(500);            
+            
+        // });
+        // $('.liebiao>a').mouseleave(function () {            
+            
+        //     $(this).children('.tao').children('.xiao').stop(true).fadeIn(500);
+        //     $(this).children('.tao').children('.da').stop(true).fadeOut(500);
+        //     $(this).children('span').stop(true).fadeOut(500);
+        // })
+
+
+    // 委托事件 延迟点击a标签显示第一页面
+    setTimeout(function(){
+         $('.liebiao>a').eq(0).trigger('click');
+        
+    },2000);
+   
 });
 

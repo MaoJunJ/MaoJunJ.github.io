@@ -4,6 +4,39 @@ body {
 
     .typeArea {
 
+        // 入场封面
+    //     .ruchang {
+    //         display: block;
+    //         width: 100%;
+    //         height: 100%;
+    //         background: url(../image/ruchang.png) no-repeat;
+    //         background-size: 100% 100%;
+    //         background-attachment: fixed;
+    //         padding-bottom: 50%;
+    //         display: none;
+
+    //         img {
+    //             position: absolute;
+    //             top: 50%;
+    //             margin-top: -100px;
+    //             left: 50%;
+    //             margin-left: -90px;
+    //         }
+
+    // .hengtiao {
+    //     position: absolute;
+    //     top: 50%;
+    //     margin-top: 40px;
+    //     width: 0;
+    //     height: 3px;
+    //     background-color: rgb(58, 29, 29);
+        
+    // }
+    
+    
+    //     }
+
+
         .header {
             height: 50px;
             width: 100%;
@@ -266,7 +299,7 @@ body {
             width: 969px;
             height: 1200px;
             // background: url(../Images/ri_634a8e7.png);
-            margin: -250px auto 0;
+            margin: -50px auto 0;
             .circle { width: 200px; height: 200px; position: absolute; top: 50%; left: 50%; margin: -100px 0 0 -100px;}
             .circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .center { position: absolute; left: 50%; top: 50%; margin: -30px 0 0 -30px; width: 60px; height: 60px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.2); opacity:0;}
             .center { position: absolute; left: 50%; top: 50%; margin: -35px 0 0 -35px; width: 0px; height: 0px; border-radius: 0px; text-align: center; line-height: 70px; color: #EAEAEA; font-size: 16px;}
@@ -313,6 +346,7 @@ body {
             transform-origin: center;
             opacity: 0;
             z-index: 5;
+           
             }
     
             @keyframes arrowsdowkey {
@@ -364,6 +398,7 @@ body {
             left: 0px;
             opacity: 0;
             z-index: 5;
+           display: none;
             .reguluslegends{
                 position: absolute;
                 top: 63px;
@@ -377,6 +412,53 @@ body {
             }
         }
     
+        .liebiao {
+            position: fixed;
+            top: 280px;
+            left: 25px;
+            z-index: 5;
+           
+            a {
+                text-decoration: none;
+                color: black; 
+                
+                 
+                .tao {
+                    i {                   
+                        position: absolute;
+                        width: 28px;
+                        height: 28px;
+                        background: url(../Images/jingling.png) -304px -266px no-repeat;
+                        }
+                    }
+                    
+                    i.da {
+                        background: url(../Images/jingling.png) -272px -266px no-repeat;
+                        display: none;
+                        
+                        }
+                    }
+               
+                .biao {  
+                    width: 100px;                                  
+                    font-weight: bold;
+                    display: none;
+                    position: absolute;
+                    margin-top: 4px;
+                    margin-left: 50px;  
+                    font-size: 22px;
+               
+                }
+                .dian {
+                    display: block;
+                    width: 12px;
+                    height: 50px;
+                    background: url(../Images/jingling.png) -462px -200px no-repeat;
+                    margin-left: 8px;
+                    margin-top: 30px;
+                }
+        }
+
         .contentPortion{
             width: 100%;
             height: 100%;
@@ -387,44 +469,366 @@ body {
             left: 50%;
             transform: translate(-50%,-50%);
             z-index: 4;
-
-            #figure{
-                width: 1300px;
-                height: 525px;
+                        
+            // 第一屏
+            .one {
+                width: 100%;
+                height: 602px; 
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-45%);
-                display: flex;
-                justify-content: space-around;
-                .flip-container{
-                    opacity: 0;
-                    perspective:1000px;
-                    width:133px;
-                    height:525px;
-                    cursor: pointer;
-                    
-                    transition:0.8s;
-                    transform-style:preserve-3d;
-                    position:relative;
-
-                    .front,.back {
-                        position:absolute;
+                // display: none;
+                
+                .slogan {
+                    width: 124px;            
+                    height: 650px;
+                    position: absolute;
+                    top: 140px;
+                    left: 50%;
+                    margin-left: -65px;
+        
+                    img {
+                        height: 100%;
                     }
-                    .front {
-                        backface-visibility: hidden;
+                    @keyframes jian{
+                        50%{
+                            transform: translateX(-2px);
+                        }
                     }
-                    .back {
-                        transform:rotateY(180deg);
-                    }
-                    
-                    &:hover {
-                        transform:rotateY(180deg);
-                    }
-
                 }
+               
+                .jian {
+                    width: 150px;
+                    height: 400px;
+                    position: absolute;
+                    top: -400px;
+                    left: 50%;
+                    margin-left: 400px;
+                    animation: jian 0.1s infinite;
+                    
+                    img {
+                        height: 100%;
+                    }
+                }
+                .die {
+                    width: 122px;
+                    height: 137px;
+                    position: absolute;
+                    top: 60px;
+                    left: 50%;
+                    margin-left: -115px;
+                    background: url(../Images/jian_die.png);
+                    transform: rotateY(180deg);  
+                    opacity: 0;          
+                }
+        
+                .leftA {
+                    width: 293px;
+                    height: 74px;            
+                    background: url(../Images/order_btn.png);
+                    position: absolute;
+                    top: 400px;
+                    left: 50%;
+                    margin-left: -580px;
+                    animation: shakeX 2s infinite;
+        
+                    &:hover {
+                        background: url(../Images/order_h.png);
+                        animation-play-state: paused;
+                    }
+                    @keyframes shakeX{
+                        50%{
+                            transform: translateY(-10px);
+                        }
+                    }
+                }       
+        
+                .rightA {
+                    width: 293px;
+                    height: 74px;            
+                    background: url(../Images/xyxy.png);
+                    position: absolute;
+                    top: 400px;
+                    right: 50%;
+                    margin-right: -580px;
+                    animation: shakeY 2s infinite;
+        
+                    &:hover {
+                        background: url(../Images/xyxy_zt.png);
+                        animation-play-state: paused;
+        
+                    }
+                    @keyframes shakeY{
+                        50%{
+                            transform: translateY(10px);
+                        }
+                    }
+                }
+                
+                .huiyi {
+                    width: 50px;
+                    height: 178px;
+                    background: url(../Images/hyzw.png);
+                    position: absolute;
+                    top: 150px;
+                    right: 50px;
+                    animation: shakeX 2s infinite;
+        
+                    &:hover {
+                        background: url(../Images/hyzw_h.png); 
+                        animation-play-state: paused;
+                    }
+                }
+        
+                .bofang {            
+                    position: absolute;
+                    top: 440px;
+                    left: 50%;
+                    margin-left: -5px;
+                    width: 50px;
+                    height: 50px;
+                    background: url(../Images/jingling.png) 0 -267px no-repeat;
+                    animation: shakeZ 1s infinite;
+        
+                    @keyframes shakeZ {
+                        50% {
+                            transform: scaleX(1.5) scaleY(1.5);
+                            
+                        }
+                    }
+                }
+        
+                .mubu {
+                    position: absolute;
+                    width: 100%;
+                    height: 980px;      
+                   background-color: rgba(0, 0, 0,.8);
+                   display: none;
+        
+                    .heibu {
+                        width: 1000px;
+                        height: 560px;
+                        background-color: black;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        margin-left: -500px;
+                        margin-top: -350px;
+        
+                        .xyj {               
+                            width: 100%;
+                            height: 100%;
+                            
+                        }
+                    }
+                    .shut {
+                        width: 35px;
+                        height: 35px;
+                        position: absolute;
+                        top: 140px;
+                        right: 370px;
+                        background: url(../Images/jingling.png) -417px -216px no-repeat;
+                        
+                        &:hover {
+                            animation: xuanzhuang 1s linear ;
+                        }
+
+                        @keyframes xuanzhuang{
+                            from{}
+                            to{
+                                transform: rotateZ(180deg);
+                            }
+                        }
+                    }
+                    
+                }
+               
+            }
+        
+            // 第二屏
+            .red {
+                border-bottom: 3px solid red;
+                font-weight: bold;
+            }
+            .two {
+                position: absolute;
+                width: 100%;
+                height: 602px;      
+                // display: none;        
+                
+                .baitou {
+                    width: 100%;
+                    height: 516px;
+                    
+                    #big{
+                        margin-top: 150px;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .lunbo_left {
+                        width: 580px;
+                        height: 326px;
+                        // border: 1px solid red;
+                        overflow: hidden;
+                        position: absolute;
+                        top: 230px;
+                        left: 380px;                      
+                        box-shadow: rgb(101, 108, 110) 0px 0px 20px 5px ;
+
+                      
+            
+                        img {
+                            width: 580px;
+                            height: 326px;
+                        }
+                            
+                    }
+            
+                    .xiaodian {
+                        position: absolute;
+                        top: 530px;
+                        left: 580px;
+            
+                        i {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 8px;
+                            border: 1px solid rgb(186, 179, 166);
+                            float: left;
+                            margin-right: 10px;
+                        box-shadow: rgb(183, 217, 228) 0px 0px 20px 5px ;
+
+            
+                        }
+                    }
+            
+                    .lunbo_right {
+                        width: 430px;
+                        height: 350px;
+                        position: absolute;
+                        top: 300px;
+                        left: 980px;
+                        overflow: hidden;
+            
+                        .head {
+                            width: 100%;
+                            height: 30px;
+                            border-bottom: 1px solid rgb(176, 163, 139);
+            
+                            span {
+                                padding: 4px 10px;
+                                font-size: 18px;
+                                margin-right: 10px;                                  
+                                
+                                // &:hover {
+                                //     animation: bounce 1s infinite;
+                                // }
+                            }
+                           
+                        }
+            
+                        .all {
+                            float: left;
+                            width: 100%;
+                            height: 310px;               
+                            margin-top: 10px;
+                            cursor: pointer;   
+            
+            
+                            li {
+                                width: 100%;
+                                line-height: 32px;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                word-break: break-all;
+                                white-space: nowrap;
+                                border-bottom: 1px dashed rgb(176, 163, 139);
+                                font-size: 14px;
+            
+                                &:nth-child(1) {
+                                    background-color: rgb(176, 163, 139);
+                                    span {
+                                        float: left;
+                                        width: 50px;
+                                        height: 100%;
+                                        background-color: red;
+                                        text-align: center;
+                                        color: #fff;
+                                    }
+                                    h3 {
+                                        color: #fff;
+                                    }
+                                }
+                                &:last-child {
+                                    border-bottom: 0;
+                                }
+            
+                                &:hover {
+                                    color: red;
+                                }
+                            }
+                        }
+                        .news {
+                            li {
+                                &:first-child {
+                                    background-color: rgba(0, 0, 0,0);
+                                }
+                            }
+                        }
+                        .notice {
+                            li {
+                                &:first-child {
+                                    background-color: rgba(0, 0, 0,0);
+                                }
+                            }
+                        }
+                        .strategy {
+                            li {
+                                &:first-child {
+                                    background-color: rgba(0, 0, 0,0);
+                                }
+                            }
+                        }                     
+                    }
+                }            
             }
 
+            // 第三屏
+            .yiqi {
+                display: none;
+                #figure{
+                    width: 1100px;
+                    height: 525px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-45%);
+                    display: flex;
+                    justify-content: space-around;
+                   
+                    .flip-container{
+                        width:133px;
+                        height:525px;
+                        transition:1s;
+                        transform-style:preserve-3d;
+                        perspective:1000px;
+                        position:relative;
+                        cursor: pointer;
+                        .front,.back {
+                            position:absolute;
+                        }
+                        .front {
+                            backface-visibility: hidden;
+                        }
+                        .back {
+                            transform:rotateY(180deg);
+                        }
+                        &:hover {
+                            transform:rotateY(180deg);
+                        }
+                    }
+                }
+            }
+            // 第四屏
             .bigwallpaper{
                 width: 100%;
                 height: 100%;
@@ -442,11 +846,11 @@ body {
                     
                 @keyframes bigwallpaperkey {
                     from {
-                        transform: scale(.9);
+                        transform: scale(1);
                     }
                 
                     to {
-                        transform: scale(1.1);
+                        transform: scale(1.2);
                     }
                 }
                     a{
@@ -538,7 +942,7 @@ body {
                     
                 @keyframes bigwallpaperkey {
                     from {
-                        transform: scale(.9);
+                        transform: scale(0.9);
                     }
                 
                     to {

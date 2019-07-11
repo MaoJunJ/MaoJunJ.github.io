@@ -1,0 +1,643 @@
+.topBar {
+    height: 54px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.wrap {
+    position: relative;
+    height: 980px;
+    widows: 100%;
+    overflow: hidden;
+}
+
+.wrap .btn-index {
+    width: 82px;
+    height: 46px;
+    background: url("../images/ny-images/btn-index.png") no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.wrap .btn-order {
+    width: 302px;
+    height: 60px;
+    position: absolute;
+    top: 800px;
+    left: 10px;
+    background: url("../images/ny-images/common_z.png") no-repeat;
+}
+
+.wrap .btn-order:hover {
+    background-position: 0px -60px;
+}
+
+.wrap .nav-wrap {
+    width: 100px;
+    height: 180px;
+    background: url(../images/ny-images/nav-bg.png) no-repeat right center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -90px;
+}
+
+.wrap .nav-wrap .btn-nav {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    background-color: red;
+}
+
+.wrap .nav-wrap .btn-nav.btn-nav01 {
+    background: url(../images/ny-images/btn-nav01.png) no-repeat;
+    position: absolute;
+    top: 6px;
+    left: 36px;
+}
+
+.wrap .nav-wrap .btn-nav.btn-nav01.cur,
+.wrap .nav-wrap .btn-nav.btn-nav01:hover {
+    background: url(../images/ny-images/btn-nav01-h.png) no-repeat;
+}
+
+.wrap .nav-wrap .btn-nav.btn-nav02 {
+    background: url(../images/ny-images/btn-nav02.png) no-repeat;
+    position: absolute;
+    top: 53px;
+    left: 6px;
+}
+
+.wrap .nav-wrap .btn-nav.btn-nav02.cur,
+.wrap .nav-wrap .btn-nav.btn-nav02:hover {
+    background: url(../images/ny-images/btn-nav02-h.png) no-repeat;
+}
+
+.wrap .nav-wrap .btn-nav.btn-nav03 {
+    background: url(../images/ny-images/btn-nav03.png) no-repeat;
+    position: absolute;
+    top: 100px;
+    left: 6px;
+}
+
+.wrap .nav-wrap .btn-nav.btn-nav03.cur,
+.wrap .nav-wrap .btn-nav.btn-nav03:hover {
+    background: url(../images/ny-images/btn-nav03-h.png) no-repeat;
+}
+
+.wrap .nav-wrap .btn-nav.btn-nav04 {
+    background: url(../images/ny-images/btn-nav04.png) no-repeat;
+    position: absolute;
+    top: 146px;
+    left: 36px;
+}
+
+.wrap .nav-wrap .btn-nav.btn-nav04.cur,
+.wrap .nav-wrap .btn-nav.btn-nav04:hover {
+    background: url(../images/ny-images/btn-nav04-h.png) no-repeat;
+}
+
+.wrap .nav-wrap .name {
+    width: 27px;
+    height: 56px;
+    padding: 60px 0 0 65px;
+}
+
+.wrap .nav-wrap .name img {
+    display: none;
+}
+
+.wrap .nav-wrap .name img.cur {
+    display: block;
+}
+
+/* main */
+.main {
+    height: 100%;
+    background: url(../images/ny-images/bg-bh.jpg) no-repeat center top;
+}
+
+.main .part {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 130px 0 0 60px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.main .part.cur {
+    display: block;
+}
+
+.main .part .star-dashboard {
+    float: left;
+    width: 652px;
+    height: 652px;
+    background: url(../images/ny-images/ss-bg.png) no-repeat;
+    position: relative;
+}
+
+.main .star-dashboard .ss {
+    position: absolute;
+}
+
+.main .star-dashboard .ss.ss-ql {
+    top: -190px;
+    left: 60px;
+}
+
+.main .star-dashboard .ss.ss-bh {
+    top: -100px;
+    left: -100px;
+}
+
+.main .star-dashboard .ss.ss-zq {
+    top: 10px;
+    left: -20px;
+}
+
+.main .part .star {
+    position: absolute;
+    width: 124px;
+    height: 124px;
+    border-radius: 100%;
+}
+
+/* part01 star */
+.main .part01 .star01 {
+    top: 260px;
+    right: -50px;
+}
+
+.main .part01 .star02 {
+    top: 460px;
+    right: 20px;
+}
+
+.main .part01 .star03 {
+    bottom: -50px;
+    left: 250px;
+}
+
+.main .part01 .star04 {
+    top: 520px;
+    left: 60px;
+}
+
+.main .part01 .star05 {
+    top: 340px;
+    left: -50px;
+}
+
+.main .part01 .star06 {
+    top: 140px;
+    left: -30px;
+}
+
+.main .part01 .star07 {
+    top: -50px;
+    left: 260px;
+}
+
+/* part02 star */
+.main .part02 .star01 {
+    top: 260px;
+    right: -50px;
+}
+
+.main .part02 .star02 {
+    top: 460px;
+    right: 20px;
+}
+
+.main .part02 .star03 {
+    bottom: -50px;
+    left: 300px;
+}
+
+.main .part02 .star04 {
+    top: 520px;
+    left: 60px;
+}
+
+.main .part02 .star05 {
+    top: 210px;
+    left: -50px;
+}
+
+.main .part02 .star06 {
+    top: 40px;
+    left: 40px;
+}
+
+.main .part02 .star07 {
+    top: -50px;
+    left: 260px;
+}
+
+/* part03 star */
+.main .part03 .star01 {
+    top: 260px;
+    right: -50px;
+}
+
+.main .part03 .star02 {
+    bottom: -50px;
+    left: 300px;
+}
+
+.main .part03 .star03 {
+    top: 540px;
+    left: 90px;
+}
+
+.main .part03 .star04 {
+    top: 380px;
+    left: -30px;
+}
+
+.main .part03 .star05 {
+    top: 180px;
+    left: -50px;
+}
+
+.main .part03 .star06 {
+    top: -50px;
+    left: 260px;
+}
+
+.main .part03 .star07 {
+    top: 50px;
+    right: 36px;
+}
+
+
+.main .star-dashboard .star .head-photo {
+    display: block;
+    width: 104px;
+    height: 104px;
+    margin: 8px auto 0;
+    border: 1px solid #8ea3b4;
+    border-radius: 100%;
+    position: relative;
+}
+
+.main .star-dashboard .star .head-photo img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 4px auto 0;
+    border: 2px solid #244f74;
+    border-radius: 100%;
+}
+
+.main .star-dashboard .star .name {
+    display: none;
+    width: 104px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    text-align: center;
+    color: #194473;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -52px;
+    z-index: 10;
+    background: url(../images/ny-images/ny_z_36ba94c.png) 0px 0px no-repeat;
+}
+
+.main .part .star.ulock:hover .name,
+.main .part .star.ulock.current .name {
+    display: block;
+}
+
+.main .part .star.ulock:hover .head-photo,
+.main .part .star.ulock.current .head-photo {
+    background: #bcd5e0;
+    border: 1px solid #bcd5e0;
+}
+
+.main .part .star.ulock:hover .head-photo img,
+.main .star-dashboard .star.ulock.current .head-photo img {
+    border: 2px solid #b2e4fc;
+}
+
+.main .part .star.ulock:hover::before,
+.main .star-dashboard .star.ulock.current::before {
+    animation: star-animation 1.6s linear infinite;
+}
+
+.main .part .star::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8ea3b4;
+    box-sizing: border-box;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main .part .star.lock .head-photo::after {
+    display: block;
+}
+
+.main .part .star .head-photo::after {
+    content: '';
+    display: none;
+    width: 93px;
+    height: 92px;
+    background: url(../images/ny-images/lock_9a05504.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+@keyframes star-animation {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.04);
+        opacity: .3;
+    }
+}
+
+
+.main .part .star-detail {
+    float: left;
+    position: relative;
+    width: 320px;
+    height: 652px;
+    padding: 0 0 0 36px;
+    margin-left: 70px;
+    background: url(../images/ny-images/bg-detail.png) no-repeat;
+}
+
+.main .part .star-detail .detail-content {
+    position: relative;
+    width: 320px;
+    padding: 0 0 40px;
+}
+
+.main .part .star-detail .detail-info .star-name {
+    font-size: 38px;
+    color: #2e5682;
+    text-align: center;
+}
+
+.main .part .star-detail .detail-info .job {
+    margin-bottom: 10px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    color: #456b96;
+}
+
+.main .part .star-detail .detail-info .job i {
+    display: inline-block;
+    width: 46px;
+    height: 1px;
+    background-color: #93b0cf;
+    vertical-align: middle;
+}
+
+.main .part .star-detail .detail-info .desc {
+    margin-bottom: 10px;
+    line-height: 24px;
+    font-size: 16px;
+    color: #767880;
+}
+
+.main .part .star-detail .detail-info .desc p {
+    text-indent: 2em;
+}
+
+.main .part .star-detail .detail-info .bigger {
+    position: relative;
+    display: block;
+    width: 320px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.main .part .star-detail .detail-info .bigger img {
+    width: 100%;
+}
+
+.main .part .star-detail .detail-info .bigger i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/ny-images/ny_z_36ba94c.png) 0px -32px no-repeat;
+    transition: all 0.2s ease-in;
+}
+
+.main .part .star-detail .detail-info .bigger:hover i {
+    transform: scale(1.2);
+    bottom: 14px;
+    right: 14px;
+
+}
+
+.main .part .star-detail .detail-info .btn-news {
+    display: block;
+    width: 320px;
+    height: 58px;
+    margin-top: 20px;
+    background: url(../images/ny-images/btn-new.png) no-repeat;
+}
+
+.main .part .star-detail .detail-info .btn-news:hover {
+    background: url(../images/ny-images/btn-new-h.png) no-repeat;
+}
+
+.main .part .star-detail .swiper-button-prev,
+.main .part .star-detail .swiper-button-next {
+    width: 85px;
+    height: 21px;
+    background: url(../images/ny-images/btn-prev.png) no-repeat;
+    bottom: 0;
+    top: auto;
+    left: 0;
+}
+
+.main .part .star-detail .swiper-button-next {
+    left: auto;
+    right: 0;
+    background: url(../images/ny-images/btn-next.png) no-repeat;
+}
+
+/* .main .part .star-detail .star-btn-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+} */
+
+.main .part .star-detail .detail-info .article {
+    position: relative;
+    width: 320px;
+    height: 324px;
+    border: 3px double #c1d1de;
+    padding: 0 18px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main .part .star-detail .detail-info .article .a-title {
+    padding-bottom: 2px;
+    font-size: 18px;
+    color: #53769c;
+    text-align: center;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.main .part .star-detail .detail-info .article .a-content {
+    line-height: 28px;
+    font-size: 16px;
+    color: #3d5269;
+    height: 270px;
+    overflow: auto;
+}
+
+.main .part .star-detail .detail-info .song-wrap {
+    position: relative;
+    width: 320px;
+    height: 210px;
+    padding: 70px 18px 0;
+    box-sizing: border-box;
+    border: 3px double #c1d1de;
+    text-align: center;
+    color: #596a7d;
+}
+
+.main .part .star-detail .detail-info .song-wrap .music-bg {
+    width: 128px;
+    height: 128px;
+    background: url(../images/ny-images/music_bg.png) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    margin-left: -64px;
+    top: -64px;
+}
+
+.part03 .desc {
+    margin-bottom: 70px !important;
+}
+
+.main .part .song-wrap .music-bg .progress-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip: rect(0 128px 128px 70px);
+}
+
+.main .part .song-wrap .music-bg .progress-holder .progress-1,
+.main .part .song-wrap .music-bg .progress-holder .progress-2 {
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    border: 5px solid #577699;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    clip: rect(0 50px 100px 0);
+}
+
+.main .part .song-wrap .music-bg .progress-origin {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #577699;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform-origin: 0 50px;
+    display: none;
+}
+
+.main .part .song-wrap .music-bg .state-icon {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    display: block;
+    width: 21px;
+    height: 32px;
+    background: url(../images/ny-images/music_off.png) no-repeat;
+    background-size: 100%;
+}
+
+.main .part .song-wrap .music-bg.on .state-icon {
+    background: url(../images/ny-images/music_on.png) no-repeat;
+}
+
+.main .part .song-wrap .song-name {
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.main .part .song-wrap .song-word {
+    height: 92px;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.main .part .star-dashboard>img {
+    /* z-index: 1000; */
+    animation: img_scale 1s linear infinite alternate;
+    /* ,head_rotate 60s linear infinite; */
+}
+.main .part .star-dashboard{
+    /* animation: img_rotate 60s linear infinite; */
+}
+.main .part .star-dashboard>a{
+    /* animation: head_rotate 60s linear infinite; */
+}
+
+@keyframes img_scale {
+    from {
+        transform: scale(0.97)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes img_rotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+@keyframes head_rotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(-360deg)
+    }
+}

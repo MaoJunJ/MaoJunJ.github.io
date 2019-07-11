@@ -1,0 +1,245 @@
+body,
+div,
+span,
+p,
+a,
+ul,
+li,
+input,
+img,
+strong,
+em,
+del,
+ins,
+i,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1;
+    background-color: #f6f6f6;
+}
+
+
+
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+.btn-order {
+   
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+/* .picture {
+    display: block;
+     background: url('./img/bg4_b14cdcc.jpg') no-repeat;
+     width: 1920px;
+    text-align: left;
+    margin: 0 auto;
+}  */
+
+
+
+
+
+.login-method {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    margin:20px 0px 10px;
+
+}
+
+.login-method i {
+    font-size: 20px;
+
+}
+
+.login-method i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.login-method span {
+    font-size: 14px;
+    padding-bottom: 4px;
+
+}
+
+.a {
+    width: 100%;
+    /* text-align: left; */
+    margin: 0 auto;
+    padding: 15px 0 10px;
+    font-size: 12px;
+    line-height: 20px;
+    /* padding-top: 50px; */
+
+}
+
+
+
+.a .logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 48px;
+    margin: 0 auto;
+    
+}
+
+.a1 {
+    float: left;
+}
+
+.a2 {
+    position: relative;
+    left: 100px;
+}
+
+.a .logo a {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+.a .logo img {
+    padding-right: 15px;
+    padding-top: 5px;
+
+}
+
+.a .b {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-left: 50px;
+
+}
+
+.a .b {
+    font-style: normal
+}
+
+.a .b a {
+    text-decoration: none
+}
+
+.a .b a:hover {
+    text-decoration: underline
+}
+
+.a .b a.right {
+    display: inline-block;
+    color: #fff;
+    background-color: #610000;
+    position: absolute;
+    right: 0;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 3px;
+    top: 21px
+}
+
+.a .d a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.bottom {
+    width: 1437px;
+     height: 228px; 
+     margin: 0 auto;   
+     position: relative;
+
+}
+
+
+.bottom span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    /* width: 1437px; */
+    /* height: 228px; */
+    width: 100%;
+    background: url('./img/page5-showBg_0fcc761.png') no-repeat;
+    position: absolute;
+    bottom: 200px;
+    overflow: hidden;
+    
+}
+
+.bottom span img {
+    display: block;
+    width: 194px;
+    height: 52px;
+    position: absolute;
+    left: 180px;
+    top: 100px;
+    cursor: pointer;
+}
+
+.yuyue {
+    position: absolute;
+    top: 175px;
+    left: 40px;
+    font-size: 12px;
+}
+
+.yaoqing {
+    padding-left: 50px;
+    font-size: 14px;
+}
+
+.box li img{
+    list-style: none;
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    display: block;
+    margin-left: 200px;
+}

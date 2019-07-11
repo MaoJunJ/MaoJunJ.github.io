@@ -1,0 +1,186 @@
+.tg_btn {
+  display: block;
+  width: 179px;
+  height: 42px;
+  background: url(../images/nav3_19f233b.png) no-repeat;
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  margin-left: -113px;
+}
+.tg_btn:hover {
+  background: url("../images/nav3_h_321d2ae.png");
+}
+#NIE-share {
+  height: 22px;
+  text-align: center;
+  background: #fbf9f4;
+  padding-top: 15px;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: simSun, Arial;
+}
+#NIE-share .NIE-share-content {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  height: 22px;
+  width: 400px;
+}
+#NIE-share .NIE-share-content .NIE-share-txt {
+  height: 22px;
+  line-height: 22px;
+  color: #6b6b6b;
+  margin-right: 10px;
+  float: left;
+}
+#NIE-share .NIE-share-content .NIE-share-iconBtn {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+#NIE-share .NIE-share-content .NIE-share-iconBtn li {
+  float: left;
+}
+#NIE-share .NIE-share-content .NIE-share-iconBtn li a {
+  font-size: 22px;
+  line-height: 22px;
+  height: auto;
+}
+#NIE-share .NIE-share-content .NIE-share-iconBtn li a span {
+  height: 22px;
+  line-height: 22px;
+}
+#NIE-share .NIE-share-content .NIE-share-iconBtn li a em {
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 8px;
+  vertical-align: top;
+}
+#NIE-share .NIE-share-content .NIE-share-iconBtn li a:hover {
+  color: brown;
+}
+#NIE-share .NIE-share-clearfix {
+  clear: both;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+
+#NIE-copyRight {
+  
+  color     : #747673;
+  
+  
+}
+
+.nie-copyright-new-inner {
+
+  width      : 865px;
+  text-align : left;
+  margin     : 0 auto;
+  padding    : 15px 0 10px;
+  font-size  : 12px;
+  line-height: 20px;
+}
+
+.nie-copyright-new-inner .nie-cn-logo {
+  display       : inline-block;
+  vertical-align: middle;
+  height        : 48px;
+  min-width     : 300px
+}
+
+.nie-copyright-new-inner .nie-cn-logo a {
+  display       : inline-block;
+  vertical-align: top;
+  margin-top    : 2px;
+}
+
+.nie-copyright-new-inner .nie-cn-logo a.a0 img {
+  padding-right: 0
+}
+
+.nie-copyright-new-inner .nie-cn-logo img {
+  padding-right : 15px;
+  padding-top   : 5px;
+  border        : 0;
+  vertical-align: middle;
+}
+
+.nie-copyright-new-inner .nie-cn-nav {
+  display       : inline-block;
+  vertical-align: top;
+  position      : relative;
+  z-index       : 1;
+}
+
+.nie-copyright-new-inner .nie-cn-nav i {
+  font-style: normal
+}
+
+.nie-copyright-new-inner .nie-cn-nav i.nie-cn-nav-i2 {
+  height     : 28px;
+  line-height: 28px;
+  text-align : left;
+}
+
+.nie-copyright-new-inner .nie-cn-nav a {
+  text-decoration: none
+}
+
+.nie-copyright-new-inner .nie-cn-nav a:hover {
+  text-decoration: underline
+}
+
+.nie-copyright-new-inner .nie-cn-nav .nie-cn-reportcenter {
+  padding-left: 18px;
+  font-style  : normal;
+}
+
+.nie-copyright-new-inner .nie-cn-nav a.nie-cn-guardianship {
+  display         : inline-block;
+  color           : #fff;
+  background-color: #610000;
+  position        : absolute;
+  z-index         : 2;
+  right           : 0;
+  height          : 26px;
+  line-height     : 26px;
+  padding         : 0 3px;
+  top             : 21px
+}
+
+#NIE-copyRight a.nie-cn-guardianship {
+  color: #fff;
+}
+
+.nie-copyright-new-inner .nie-cn-part2 {
+  padding-top: 10px;
+  line-height: 24px
+}
+
+.nie-copyright-new-inner .nie-cn-part2 a {
+  text-decoration: none;
+  display        : inline-block;
+  vertical-align : top
+}
+
+.nie-copyright-new-inner .nie-cn-part2 a:hover {
+  text-decoration: underline
+}
+
+.nie-copyright-new-inner .nie-cn-part2 span {
+  display       : inline-block;
+  vertical-align: top;
+}
+
+.nie-cn-part2 a img {
+  vertical-align: top
+}
+#mp3Btn{
+  display: none;
+}

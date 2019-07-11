@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>《轩辕剑》角色回忆征文</title>
+    <meta name="description" content="问卷投票">
+    <link type="text/css" rel="stylesheet" href="./css/bottom.css">
+    <link rel="stylesheet" href="./css/pick.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/jshy.js"></script>
+</head>
+
+<body>
+    <div class="wrap ">
+        <a id="logo" target="_blank" href="#" style="display: none;">
+            <img src="./images/200.webp">
+        </a>
+        <div class="questionnaire" data-questionid="2" data-title="" id="questionnaire">
+
+            <h3 id="questionnaire-title-163" class="questionnaire-title">《轩辕剑》角色回忆征文</h3>
+            <p id="questionnaire-prefix-163" class="questionnaire-prefix">
+                <style>
+                    .questionnaire-title {
+                        font-size: 40px;
+                        font-weight: 700;
+                        text-align: center;
+                        color: #ad6937;
+                    }
+                </style>写下你关于<span style="color: rgb(173, 105, 55);">《轩辕剑叁：云和山的彼端》</span>和<span
+                    style="color: rgb(173, 105, 55);">《轩辕剑叁外传：天之痕》</span>两代作品中，与游戏角色有关的回忆和故事，并给我们投稿！文章格式、内容不限。&nbsp;<br>我们将从全部投稿作品中，选出最为精彩、用心、感人的故事，&nbsp;<br>并将你们的故事分享给更多的轩辕剑爱好者！<br>　　<br><strong>【征文要求】</strong><br>①
+                正文内容可以配图、视频、音乐，<span style="color: rgb(173, 105, 55);">但需以文字为主</span>；正文内容题材、格式、字数不限；<br>②
+                投稿须以word文档格式上传；<br>③ 参赛作品须为本人原创，禁止抄袭。同时，投稿内容须符合中华人民共和国法律规定。否则官方有权取消参与资格，由此造成的损失责任由玩家本人承担；<br>④
+                玩家本人在过去创作的、已对外发表过的、符合本次活动要求的作品，在确保本人拥有作品相关著作权、使用权的前提下，可用于本次活动投稿。<br>　　<br><strong>【活动奖励】</strong><br>①
+                所有成功参与的玩家(即按规定的要求成功投稿)，在公测后将获得游戏内独家专属称号以及<span style="color: rgb(173, 105, 55);">价值163元的道具奖励</span><br>②
+                本次活动中征集到的作品，将在活动专题上进行展示，入围的作品，作者将获得<span style="color: rgb(173, 105, 55);">游戏周边大奖</span>一份<br>③ <span
+                    style="color: rgb(173, 105, 55);">在未来针对活动参与玩家还将开展更多专享活动，敬请期待</span><br>
+            </p>
+            <!-- 表单主体部分 -->
+            <h4 class="question_title" id="question_title_0">请填写您的昵称<span style="color:red">*</span></h4>
+            <p class="question_description">（可使用艺名，展示作品时，将以此标注为稿件作者）</p>
+            <div class="question_box">
+                <p class="question_options"><input type="text" name="question22252" maxlength="undefined"
+                        id="question22252"></p>
+            </div>
+            <h4 class="question_title" id="question_title_1">投稿人联系方式<span style="color:red">*</span></h4>
+            <div class="question_box">
+                <p class="question_options"><input type="text" name="question22253" maxlength="undefined"
+                        id="question22253"></p>
+            </div>
+            <h4 class="question_title" id="question_title_2">投稿人QQ<span style="color:red">*</span></h4>
+            <div class="question_box">
+                <p class="question_options"><input type="text" name="question22254" maxlength="undefined"
+                        id="question22254"></p>
+            </div>
+            <h4 class="question_title" id="question_title_3">投稿人网易通行证<span style="color:red">*</span></h4>
+            <p class="question_description">（用于活动奖励发放，公测后将为参加本次活动的玩家送出专属礼包，请准确填写您公测时计划使用的网易通行证信息）</p>
+            <div class="question_box">
+                <p class="question_options"><input type="text" name="question22255" maxlength="undefined"
+                        id="question22255"></p>
+            </div>
+            <h4 class="question_title" id="question_title_4">请输入您的作品标题<span style="color:red">*</span></h4>
+            <div class="question_box">
+                <p class="question_options"><input type="text" name="question22256" maxlength="undefined"
+                        id="question22256"></p>
+            </div>
+            <h4 class="question_title" id="question_title_5">请上传您的征文<span style="color:red">*</span></h4>
+            <p class="question_description">（仅限doc/docx/rar/ZIP/7z 格式）</p>
+            <div class="question_box">
+                <div class="uploadarea">
+                    <div class="uploadcontent" id="resultblock_22257">
+                        <i class="iconfont icon-shangchuan">
+
+                        </i>
+                        <p class="warminfo">
+                            <span class="blue">点击添加文件</span>
+                            <br>
+                            <span class="gray">文件大小限制：5M</span>
+                        </p>
+                    </div>
+                    <input type="file" class="uploadinput" data-id="22257" name="question_upload22257"
+                        id="question_upload22257">
+                    <input name="question22257" hidden="" id="question22257">
+                </div>
+            </div>
+            <a id="questionnairelist-submit-163"
+                class="questionnairelist-submit">提交</a>
+        </div>
+        <div class="footer">
+            <div id="NIE-copyRight" style="background-color: #525252;">
+
+                <div class="nie-copyright-new-inner">
+                    <div class="nie-cn-part1">
+                        <span class="nie-cn-logo">
+                            <a class="a0" href="http://www.163.com" target="_blank"><img
+                                    src="https://nie.res.netease.com/comm/NIE_copyRight/images/netease.1.png"></a><a
+                                class="a1" href="http://game.163.com" target="_blank"><img
+                                    src="https://nie.res.netease.com/comm/NIE_copyRight/images/nie.1.png"></a>
+                        </span>
+                        <span class="nie-cn-nav">
+                            <i class="nie-cn-nav-i1">
+                                <a href="http://gb.corp.163.com/gb/about/overview.html" target="_blank">公司简介</a> - <a
+                                    href="http://help.163.com/" target="_blank">客户服务</a> - <a
+                                    href="http://gb.corp.163.com/gb/legal.html" target="_blank">相关法律</a> - <a
+                                    href="http://game.163.com/about/" target="_blank">网易游戏</a> - <a
+                                    href="http://game.163.com/contact/" target="_blank">联系我们</a> - <a
+                                    href="http://game.163.com/contact/business.html" target="_blank">商务合作</a> - <a
+                                    href="http://hr.game.163.com/index.html" target="_blank">加入我们</a>
+                            </i>
+                            <br>
+                            <i class="nie-cn-nav-i2">
+                                网易公司版权所有 ©1997-2019 <a class="nie-cn-reportcenter" href="http://www.cogcpa.org"
+                                    target="_blank">中国网络游戏版权保护联盟举报中心</a>
+                            </i>
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.sm{
+    float: left;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin-top: 22px;
+    padding-bottom: 15px;
+    margin-right: 15px;
+}
+/* 精灵图共享 */
+.spr{
+    background-image: url('../images/精灵图.png');
+}
+.ico{
+    background-image: url('../images/头像图标.png');
+}
+.guanzhu-box .sm .desc img {
+    width: 130px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.guanzhu-box .sm .desc p {
+    color: #4e4e4e;
+    line-height: 18px;
+    text-align: center;
+}
+
+.guanzhu-box .sm .desc p .col {
+    color: #bb9547;
+    display: block;
+}

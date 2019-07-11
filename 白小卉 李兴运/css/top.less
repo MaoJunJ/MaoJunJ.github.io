@@ -1,0 +1,299 @@
+@import "base";
+@keyframes close{
+    from{}
+    to{
+        transform: rotate(270deg);
+    }
+};
+@keyframes close1{
+    from{}
+    to{
+        transform: rotate(270deg);
+    }
+};
+.login{
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 7;
+    width: 100%;
+    height: 930px;
+    background-color: rgba(0, 0, 0 ,.8);
+    
+    .yun{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url('../images/order_arrow_b2c77c8.png') no-repeat 19px 39px;
+        background-size: 85%;
+    }
+    .login-content{
+        position: fixed;
+        top: 85px;
+        left: 50%;
+        margin-left: -398px;
+        width: 796px;
+        height: 545px;
+        background-color: #fff;
+        background: url('../images/order_pop_5aacd0d.png') no-repeat;
+        background-size: 100% 100%;
+        opacity: 1;
+        .login-content-close{
+            position: absolute;
+            top: 0;
+            right: -60px;
+            width: 30px;
+            height: 30px;
+            background:url('../images/close_9a55dbb.png');
+            cursor: pointer;
+        }
+        .info{
+            position: absolute;
+            margin: 195px 198px 0;
+            width: 400px;
+            height: 360px;
+            div{
+                width: 100%;
+                height: 40px;
+                border: 1px solid rgb(179, 179, 179);
+                margin-bottom: 22px;
+                overflow: hidden;
+                border-radius: 5px;
+                
+                input{
+                    width: 80%;
+                    height: 40px;
+                    padding-left: 10px;
+                    line-height: 40px;
+                    background-color: transparent;
+                    display: inline-block;
+                }
+            }
+            .xitong{
+                display: flex;
+                text-align: center;
+                div{
+                    width: 50%;
+                    height: 100%;
+                    border-collapse:collapse;
+                    line-height: 40px;
+                    border: none;
+                    cursor: pointer;
+                    &:nth-child(1){
+                        background-color: #000 ;
+                        color: #fff ;
+                        border-radius: 0;
+                        
+                    }
+                    &:nth-child(2){
+                        background-color: #fff;
+                        color: #000;
+                        border-radius: 0;
+                    }
+                    
+                }
+                // .i:hover{
+                //     background-color: #999;
+                // }
+                // .a:hover{
+                //     background-color: #999;
+                // }
+            }
+            .tel{
+                width: 100%;
+            }
+            .yanzhen1{
+                input{
+                    width: 267px;
+                    vertical-align: top;
+                    
+                }
+                span{
+                    display: inline-block;
+                    width:119px;
+                    height: 40px;
+                    background:url("../images/get_apnt_auth_img.jpg") no-repeat 100%;
+                    background-size: contain;
+                    cursor: pointer;
+                }
+            }
+            .yanzhen2{
+                input{
+                    width: 266px;
+                    vertical-align: top;
+                }
+                span{
+                    display: inline-block;
+                    width:119px;
+                    height: 40px;
+                    background:transparent;
+                    background-size: contain;
+                    line-height: 40px;
+                    text-align: center;
+                    border-left: 1px solid #ccc;
+                    cursor: pointer;
+                }
+            }
+
+            .button{
+                width: 100%;
+                height: 50px;
+                background-color: #999;
+                color: #fff;
+                text-align: center;
+                line-height: 50px;
+                font-size: 18px;
+                cursor: pointer;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tip{
+                position: absolute;
+                border: none;
+                font-size: 14px;
+                display: none;
+                i{
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background-color: red;
+                    border-radius: 100%;
+                    text-align: center;
+                    line-height: 14px;
+                    color: #fff;
+                   
+                }
+
+            }
+            .tip1{   
+                top: 78px;
+                right: -413px;
+            }
+            .tip2{
+                top: 142px;
+                right: -413px;
+            }
+            .tip3{
+                top: 206px;
+                right: -414px;
+            }
+            .true{
+                i{
+                    background-color:green;
+                }
+            }
+            .tip4{   
+                top: 78px;
+                right: -413px;
+            }
+            .tip5{
+                top: 142px;
+                right: -413px;
+            }
+            .tip6{
+                top: 206px;
+                right: -414px;
+            }
+
+        }
+    }
+}
+.container {
+    min-width: 1200px;
+    // max-width: 1600px;
+    position: relative;
+    width: 100%;
+    font-family: "\5FAE\8F6F\96C5\9ED1","Microsoft YaHei";
+    min-height: 866px;
+    background-color: #fff;
+    background: url("../images/bg_6076368.jpg") no-repeat top center ;
+
+    /*头部导航栏*/
+    #NIE-topBar{
+        height: 55px;
+        // background: #fff;
+    } 
+    /*logo部分*/
+    .logo{
+        width: 200px;
+        height: 139px;
+        position: absolute;
+        top: 73px;
+        left: 50px;
+        margin-left: 0;
+        display: block;
+        background: url("../images/200.webp")no-repeat;
+        animation: fadeInLeft 1s;
+      
+      
+    }
+    
+    /*slogan部分*/
+    .slogan {
+        width: 160px;
+        height: 298px;
+        background: url(../images/slogan_b1b170f.png) no-repeat;
+        position: absolute;
+        left: 50%;
+        top: 235px;
+        margin-left: -515px;
+        animation: fadeIn 2s;
+    }
+    .right_btn{
+        position: absolute;
+        top: 85px;
+        right: 48px;
+        a {
+            display: inline-block;
+            vertical-align: top;
+            width: 41px;
+            height: 162px;
+            margin-left: 15px;
+            animation: pulse 2s infinite;
+        }
+            
+        .mp3{
+            position: relative;
+            width: 55px;
+            height: 82px;
+            background: url("../images/mp3_box_e7287cd.png") no-repeat;
+            #zt{
+                background: url("../images/mp3_on_80bf566.png")no-repeat;
+                position: absolute;
+                width: 15px;
+                height: 26px;
+                font-style: italic;
+                top: 41px;
+                left: 50%;
+                margin-left: -7px;
+                animation: xz 3s linear infinite;
+            }
+            @keyframes xz {
+                from{
+                    transform: rotate(0deg);
+                }
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+        }
+        .go_index{
+            background: url("../images/go_index_8cbebad.png")no-repeat;
+        }
+        .go_index:hover{
+            background: url("../images/go_index_h_9de9d69.png");
+        }
+        .order{
+            background: url("../images/order_7b74d0b.png")no-repeat;
+            display: block;
+            margin-left: 90px;
+            margin-top: 21px;
+        }
+        .order:hover{
+            background: url("../images/order_h_2f347bd.png");
+        }
+    }
+}

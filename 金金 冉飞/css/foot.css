@@ -1,0 +1,208 @@
+body,
+div,
+span,
+p,
+a,
+ul,
+li,
+input,
+img,
+strong,
+em,
+del,
+ins,
+i,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1;
+    background-color: #f6f6f6;
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+.footer{
+    background-color:#fbf9f4;
+    
+}
+#NIE-share{
+    display: block;
+    width: 520px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0 10px;
+}
+
+.NIE-share-iconBtn {
+    display:inline-block;
+    font-size: 14px;
+}
+.NIE-share-txt{
+    font-size: 14px;
+}
+.NIE-share ul li {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+
+}
+.NIE-share ul li span .iconfont{
+    font-size: 14px;
+    
+}
+.NIE-share ul li .iconfont:hover{
+    color: red;
+
+}
+.nie-copyright-new-inner {
+    width: 865px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 15px 0 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.nie-copyright-new-inner .nie-cn-logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 48px;
+    min-width: 300px
+}
+.nie-cn-nav-i1{
+    cursor: pointer;
+}
+.nie-cn-guardianship{
+    cursor: pointer;
+}
+
+.nie-copyright-new-inner .nie-cn-logo a {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+     cursor: pointer;
+}
+
+.nie-copyright-new-inner .nie-cn-logo a.a0 img {
+    padding-right: 0;
+   
+}
+
+.nie-copyright-new-inner .nie-cn-logo img {
+    padding-right: 15px;
+    padding-top: 5px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.nie-copyright-new-inner .nie-cn-nav {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+}
+
+.nie-copyright-new-inner .nie-cn-nav i {
+    font-style: normal
+}
+
+.nie-copyright-new-inner .nie-cn-nav i.nie-cn-nav-i2 {
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.nie-copyright-new-inner .nie-cn-nav a {
+    text-decoration: none
+}
+
+.nie-copyright-new-inner .nie-cn-nav a:hover {
+    text-decoration: underline
+}
+
+.nie-copyright-new-inner .nie-cn-nav .nie-cn-reportcenter {
+    padding-left: 18px;
+    font-style: normal;
+}
+
+.nie-copyright-new-inner .nie-cn-nav a.nie-cn-guardianship {
+    display: inline-block;
+    color: #fff;
+    background-color: #610000;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 3px;
+    top: 21px
+}
+
+#NIE-copyRight a.nie-cn-guardianship {
+    color: #fff;
+}
+
+.nie-copyright-new-inner .nie-cn-part2 {
+    padding-top: 10px;
+    line-height: 24px
+}
+
+.nie-copyright-new-inner .nie-cn-part2 a {
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top
+}
+
+.nie-copyright-new-inner .nie-cn-part2 a:hover {
+    text-decoration: underline
+}
+
+.nie-copyright-new-inner .nie-cn-part2 span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nie-cn-part2 a img {
+    vertical-align: top
+}
